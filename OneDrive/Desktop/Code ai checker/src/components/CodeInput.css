@@ -1,0 +1,103 @@
+.code-input-wrapper {
+  background: var(--background-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.code-input-wrapper:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.code-input-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.language-select {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-select:hover {
+  border-color: var(--primary-color);
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.clear-button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clear-button:hover:not(:disabled) {
+  background: var(--background-secondary);
+  color: var(--error);
+}
+
+.clear-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.code-input {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--background-secondary);
+  color: var(--text-primary);
+  border: none;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 300px;
+  transition: background-color 0.3s ease;
+}
+
+.code-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.code-input:focus {
+  outline: none;
+}
+
+.code-input-footer {
+  padding: 0.75rem 1rem;
+  background: var(--background);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.char-count {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}

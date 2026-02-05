@@ -1,0 +1,150 @@
+.how-it-works {
+  width: 100%;
+}
+
+.hero-section {
+  background: var(--gradient);
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.steps-section {
+  padding: 80px 0;
+  background: var(--background);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem;
+}
+
+.step-card {
+  background: var(--background-secondary);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.step-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.step-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.details-section {
+  padding: 40px 0 80px;
+  background: var(--background);
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.analysis-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.75rem;
+}
+
+.analysis-feature {
+  background: var(--background-secondary);
+  border-radius: 14px;
+  padding: 1.5rem 1.4rem;
+  border: 1px solid var(--border-color);
+}
+
+.feature-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.cta-section {
+  padding: 80px 0;
+  background: var(--background-secondary);
+}
+
+.cta-box {
+  background: var(--gradient);
+  padding: 3.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.4rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+}
+

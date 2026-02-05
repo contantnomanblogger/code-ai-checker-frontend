@@ -1,0 +1,242 @@
+.result-display {
+  background: var(--background-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 1.75rem 1.5rem;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.result-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--background);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.result-content {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.confidence-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confidence-score .score-circle {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  color: var(--primary-color);
+}
+
+.score-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.score-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.score-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.score-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.confidence-score.high {
+  color: #f97316;
+}
+
+.confidence-score.medium {
+  color: #eab308;
+}
+
+.confidence-score.low {
+  color: #22c55e;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.result-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.type-label {
+  color: var(--text-secondary);
+}
+
+.type-value {
+  font-weight: 600;
+}
+
+.type-value.ai {
+  color: #f97316;
+}
+
+.type-value.human {
+  color: #22c55e;
+}
+
+.result-explanation {
+  margin-top: 0.25rem;
+}
+
+.explanation-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.explanation-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.result-indicators {
+  margin-top: 0.5rem;
+}
+
+.indicators-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.indicators-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.originality-score {
+  margin-top: 0.75rem;
+}
+
+.originality-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.originality-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--background);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.originality-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #a3e635);
+}
+
+.originality-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.share-link-box {
+  margin-top: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  background: var(--background);
+  border: 1px dashed var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.share-link-input {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--background-secondary);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.privacy-notice {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .result-content {
+    grid-template-columns: 1fr;
+  }
+
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
