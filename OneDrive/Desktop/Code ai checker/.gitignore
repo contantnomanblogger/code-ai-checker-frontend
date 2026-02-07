@@ -1,14 +1,29 @@
-node_modules/
-dist/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv
+# system / windows
+Thumbs.db
+Desktop.ini
+
+# node
+node_modules
+dist
+
+# env
 .env
-.DS_Store
+
+# logs
 *.log
 
+# oneDrive / windows junk
+**/Application Data/
+**/Local Settings/
+**/My Documents/
+**/NetHood/
+**/PrintHood/
+**/Recent/
+**/SendTo/
+**/Start Menu/
+**/Templates/
+**/Cookies/
+**/Documents/
+**/My Music/
+**/My Pictures/
+**/My Videos/
