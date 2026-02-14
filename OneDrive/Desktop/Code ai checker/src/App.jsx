@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
@@ -171,6 +172,7 @@ export default function App() {
           Tip: Try different code styles (comments-heavy vs minimal) to see confidence change.
         </div>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
