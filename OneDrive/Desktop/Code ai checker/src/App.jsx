@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
@@ -53,6 +54,7 @@ export default function App() {
 
   return (
     <div style={styles.page}>
+      <Analytics />
       <div style={styles.container}>
         <h1 style={styles.title}>Code AI Checker</h1>
 
